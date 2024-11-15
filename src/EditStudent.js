@@ -30,7 +30,7 @@ const EditStudent = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.put(`https://student-attendance-mgmt-backend-1.onrender.com/api/students/${id}/`, {
+    axios.put(`https://student-attendance-mgmt-backend-1.onrender.com/students/${id}/`, {
       first_name: firstName,
       last_name: lastName,
       email: email,
