@@ -13,7 +13,7 @@ const AddStudent = () => {
     event.preventDefault();
 
     axios
-      .post('https://student-attendance-mgmt-backend-1.onrender.com/students/', {
+      .post('https://student-attendance-mgmt-backend-1.onrender.com/api/students/', {
         first_name: firstName,
         last_name: lastName,
         email: email,
