@@ -13,7 +13,7 @@ const AddStudent = () => {
     event.preventDefault();
 
     axios
-      .post('http://127.0.0.1:8000/api/students/', {
+      .post('https://student-attendance-mgmt-backend-1.onrender.com/api/students/', {
         first_name: firstName,
         last_name: lastName,
         email: email,

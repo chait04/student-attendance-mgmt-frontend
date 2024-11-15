@@ -7,7 +7,7 @@ const StudentList = () => {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/students/')
+    axios.get('https://student-attendance-mgmt-backend-1.onrender.com/api/students/')
       .then((response) => {
         setStudents(response.data);
       })
@@ -17,7 +17,7 @@ const StudentList = () => {
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://127.0.0.1:8000/api/students/${id}/`)
+    axios.delete(`https://student-attendance-mgmt-backend-1.onrender.com/api/students/${id}/`)
       .then(() => {
         setStudents(students.filter(student => student.id !== id));
       })
